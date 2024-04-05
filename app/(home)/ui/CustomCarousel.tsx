@@ -1,3 +1,4 @@
+"use client"
 import { Carousel , Image} from 'antd';
 
 const contentStyle: React.CSSProperties = {

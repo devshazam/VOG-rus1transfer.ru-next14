@@ -17,8 +17,9 @@ export default function HomeLayout({
   } = theme.useToken();
 
   return (
-
+<>
          <Layout>
+          <div className="lg:w-4/5 lg:m-auto">
       <Header style={{ display: 'flex', alignItems: 'center' }}>
       <ResponsiveAppBar />
       </Header>
@@ -43,9 +44,10 @@ export default function HomeLayout({
       <Footer style={{ textAlign: 'center' }}>
         Created by <a href="https://github.com/shazam-dev">Shazam_dev</a> ©2024
       </Footer>
-      <Contacts />
+      </div>
     </Layout>
-          
+      <Contacts />
+          </>
 
 
   );
