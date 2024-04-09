@@ -15,31 +15,44 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import {} from '@mui/material';
+import { Modal } from 'antd';
 
-const pages = ['Калькулятор', 'Тарифы', 'Карта'];
+
+const pages = ['calc', 'tarif', 'map'];
+const pagesToRussian:any = {calc: "Калькулятор", tarif: "Тарифы", map: "Карта"};
 
 
 export default function ResponsiveAppBar() {
-
+  const [isModalOpen, setIsModalOpen] =  React.useState<any>(false);
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElUser(event.currentTarget);
-  };
+
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
+  const showModal = () => {
+    setIsModalOpen(true);
   };
 
-  return (
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
+  return (     
+    <>
+    <Modal title="Акция месяца!" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+      <p>Скидка 10% на обратный путь! Скидка действует на путь в обратном направлении, если до этого клиент проехал его в прямом направлении не позднее чем за 24 до старта маршрута! </p>
+
+    </Modal>
     <AppBar position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -49,7 +62,7 @@ export default function ResponsiveAppBar() {
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -94,7 +107,7 @@ export default function ResponsiveAppBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Link href={`#${page}`}><Typography textAlign="center">{page}</Typography></Link>
+                  <Link href={`#${page}`}><Typography textAlign="center">{pagesToRussian[page]}</Typography></Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -105,7 +118,7 @@ export default function ResponsiveAppBar() {
             variant="h5"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -121,22 +134,23 @@ export default function ResponsiveAppBar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Button
+              <Link href={`#${page}`} key={page}><Button
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
-              </Button>
+                {pagesToRussian[page]}
+              </Button></Link>
             ))}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-                <Avatar alt="Remy Sharp" src="/img/flag.png"  sx={{ p: 0 }}/>
+                <Avatar alt="Remy Sharp" src="/icons8-sale.gif"  sx={{ p: 0 }}  onClick={showModal}/>
              
           </Box>
         </Toolbar>
       </Container>
     </AppBar>
+    </> 
   );
 };

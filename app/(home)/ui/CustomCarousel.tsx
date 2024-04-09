@@ -15,11 +15,11 @@ export default function CustomCarousel() {
     <Carousel autoplay >
     <div>
       {/* <h3 style={contentStyle}>1</h3> */}
-      <Image src="/img/banner/taxi.jpg" className='rounded-md'/>
+      <Image src="/banner.jpg" className='rounded-md' preview={false}/>
     </div>
-    <div>
+    {/* <div>
       <Image src="/img/banner/taxi.jpg" />
-    </div>
+    </div> */}
   </Carousel>
   </div>
   );

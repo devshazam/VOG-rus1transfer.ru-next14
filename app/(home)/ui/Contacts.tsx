@@ -2,7 +2,7 @@
 import { useEffect , useState} from 'react';
 import {Carousel, Image} from 'react-bootstrap';
 
-const imgArray = [["phone", "tel:+79093802519", '/img/phone.png'], ["Telegramm", "https://t.me/kopiprint34", '/img/telegramm.png'], ["Whatsapp", "https://wa.me/79200000000?text=Сайт", '/img/whatsapp.png']]
+const imgArray = [["phone", "tel:+79020970101", '/img/phone.png'], ["Telegramm", "https://t.me/+79020970101", '/img/telegramm.png'], ["Whatsapp", "https://wa.me/+79020970101", '/img/whatsapp.png']]
 
 
 export default function Contacts() {

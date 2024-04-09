@@ -3,8 +3,10 @@ import ResponsiveAppBar from "./ui/ResponsiveAppBar"
 import Container from '@mui/material/Container';
 import CustomCarousel from "./ui/CustomCarousel"
 import Contacts from "./ui/Contacts"
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import { Breadcrumb, Layout, Menu, theme,   Row, Col, List } from 'antd';
 const { Header, Content, Footer } = Layout;
+
+
 
 export default function HomeLayout({
   children,
@@ -20,14 +22,12 @@ export default function HomeLayout({
 <>
          <Layout>
           <div className="lg:w-4/5 lg:m-auto">
-      <Header style={{ display: 'flex', alignItems: 'center' }}>
+      <Header style={{ display: 'flex', alignItems: 'center', height: 'auto' }}>
       <ResponsiveAppBar />
       </Header>
       <Content style={{ padding: '0 48px' }}>
         <Breadcrumb style={{ margin: '16px 0' }}>
           <Breadcrumb.Item>Home</Breadcrumb.Item>
-          <Breadcrumb.Item>List</Breadcrumb.Item>
-          <Breadcrumb.Item>App</Breadcrumb.Item>
         </Breadcrumb>
         <div
           style={{
@@ -42,7 +42,10 @@ export default function HomeLayout({
         </div>
       </Content>
       <Footer style={{ textAlign: 'center' }}>
-        Created by <a href="https://github.com/shazam-dev">Shazam_dev</a> ©2024
+
+        <div>
+        Разработано в <a href="https://kopi34.ru/">kopi34.ru</a> ©2024
+        </div>
       </Footer>
       </div>
     </Layout>
