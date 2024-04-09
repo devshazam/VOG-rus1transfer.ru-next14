@@ -12,15 +12,15 @@ export default function CustomCarousel() {
 
   return (
     <div  className="hidden md:block">
-    <Carousel autoplay >
+      <Image src="/banner.jpg" className='rounded-md w-full' preview={false}/>
+    {/* <Carousel autoplay >
     <div>
-      {/* <h3 style={contentStyle}>1</h3> */}
-      <Image src="/banner.jpg" className='rounded-md' preview={false}/>
+      <Image src="/banner.jpg" className='rounded-md w-full' preview={false}/>
     </div>
-    {/* <div>
+    <div>
       <Image src="/img/banner/taxi.jpg" />
-    </div> */}
-  </Carousel>
+    </div>
+  </Carousel> */}
   </div>
   );
 };
