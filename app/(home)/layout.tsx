@@ -1,7 +1,7 @@
 "use client"
 import ResponsiveAppBar from "./ui/ResponsiveAppBar"
 import Container from '@mui/material/Container';
-import CustomCarousel from "./ui/CustomCarousel"
+
 import Contacts from "./ui/Contacts"
 import { Breadcrumb, Layout, Menu, theme,   Row, Col, List } from 'antd';
 const { Header, Content, Footer } = Layout;
@@ -37,12 +37,49 @@ export default function HomeLayout({
             borderRadius: borderRadiusLG,
           }}
         >
-            <CustomCarousel/>
+            
             {children}
         </div>
       </Content>
       <Footer style={{ textAlign: 'center' }}>
+      <div className='p-4'>
 
+<Row gutter={[12, 12]}>
+    <Col  span={24} md={6} >
+    <ul>
+        <li><a href="/rss">Самара</a></li>
+        <li><a href="/vgr">Волгоград</a></li>
+        <li><a href="/vgv">Волгодонск</a></li>
+    </ul>
+    </Col>
+    <Col  span={24} md={6} >
+    <ul>
+        <li><a href="/vgd">Луганск</a></li>
+        <li><a href="/vgm">Москва</a></li>
+        <li><a href="/vgd">Донецк</a></li>
+    </ul>
+
+    </Col>
+    <Col  span={24} md={6} >
+    <ul>
+        <li><a href="/vgr">Ростов-на-Дону</a></li>
+        <li><a href="/rsa">Астрахань</a></li>
+        <li><a href="/rsm">Миниральные Воды</a></li>
+        {/* <li>Элиста</li> */}
+    </ul>
+
+    </Col>
+    <Col  span={24} md={6} >
+    <ul>
+        <li><a href="/vge">Элиста</a></li>
+        <li><a href="/vgs">Сочи</a></li>
+
+    </ul>
+
+    </Col>
+</Row>
+</div>
+<p>Работаем с корпоративными клиентами</p>
         <div>
         Разработано в <a href="https://kopi34.ru/">kopi34.ru</a> ©2024
         </div>
