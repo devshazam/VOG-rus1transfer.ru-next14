@@ -6,7 +6,7 @@ import {
 
 
 // Config:
-const cityArray:any = [480, 260, 1000, 720, 1000, 300, 1300, 1254, 620, 480];
+const cityArray:any = [480, 260, 1000, 720, 1000, 300, 1300, 1254, 620, 480, 0];
 const costOfMetr: any = [25, 30, 35, 42];
 const saleValue: any = [0, 3, 3, 6];
 const mapArray: any = ['vgr', 'vgv', 'vgs', 'vgd', 'vgm', 'vge', 'rss', 'rse', 'rsa', 'rsm']
@@ -30,7 +30,7 @@ export default function Calc(props: CalcProps) {
   return (
 
         <>
-        <div id="calc" className='mb-6 rounded' style={{backgroundColor: "#f5f5f5;"}} >
+        <div id="calc" className='mb-6 rounded' style={{backgroundColor: "#f5f5f5"}} >
                 <div className='mt-2 ml-2'><h2 className='text-2xl '>Калькулятор:</h2></div>
 
 
@@ -63,6 +63,7 @@ export default function Calc(props: CalcProps) {
                             <Select.Option value={7}>Ростов ↔️ Элиста</Select.Option>
                             <Select.Option value={8}>Ростов ↔️ Астрахань</Select.Option>
                             <Select.Option value={9}>Ростов ↔️ Мин. Воды</Select.Option>
+                            <Select.Option value={10}>Россия и новые территории (произвольный маршрут)</Select.Option>
                         </Select>
                         
 

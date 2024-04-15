@@ -50,13 +50,15 @@ export default function HomeLayout({
         <li><a href="/rss">Самара</a></li>
         <li><a href="/vgr">Волгоград</a></li>
         <li><a href="/vgv">Волгодонск</a></li>
+        <li>Санкт_Петербург</li>
     </ul>
     </Col>
     <Col  span={24} md={6} >
     <ul>
-        <li><a href="/vgd">Луганск</a></li>
+        <li><a href="/vgd">Луганск (ЛНР)</a></li>
         <li><a href="/vgm">Москва</a></li>
-        <li><a href="/vgd">Донецк</a></li>
+        <li><a href="/vgd">Донецк (ДНР)</a></li>
+        <li>Новосибирск</li>
     </ul>
 
     </Col>
@@ -65,6 +67,7 @@ export default function HomeLayout({
         <li><a href="/vgr">Ростов-на-Дону</a></li>
         <li><a href="/rsa">Астрахань</a></li>
         <li><a href="/rsm">Миниральные Воды</a></li>
+        <li>Хабаровск</li>
         {/* <li>Элиста</li> */}
     </ul>
 
@@ -73,6 +76,8 @@ export default function HomeLayout({
     <ul>
         <li><a href="/vge">Элиста</a></li>
         <li><a href="/vgs">Сочи</a></li>
+        <li>Красноярск</li>
+        <li>Крым</li>
 
     </ul>
 
