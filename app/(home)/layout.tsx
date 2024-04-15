@@ -55,9 +55,9 @@ export default function HomeLayout({
     </Col>
     <Col  span={24} md={6} >
     <ul>
-        <li><a href="/vgl.html">Луганск (ЛНР)</a></li>
         <li><a href="/vgm.html">Москва</a></li>
         <li><a href="/vgd.html">Донецк (ДНР)</a></li>
+        <li><a href="/rsm.html">Миниральные Воды</a></li>
         <li>Новосибирск</li>
     </ul>
 
@@ -66,8 +66,8 @@ export default function HomeLayout({
     <ul>
         <li><a href="/vgr.html">Ростов-на-Дону</a></li>
         <li><a href="/rsa.html">Астрахань</a></li>
-        <li><a href="/rsm.html">Миниральные Воды</a></li>
         <li>Хабаровск</li>
+        <li>Краснодар</li>
         {/* <li>Элиста</li> */}
     </ul>
 
