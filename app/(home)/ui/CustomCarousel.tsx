@@ -12,7 +12,7 @@ export default function CustomCarousel() {
 
   return (
     <div  className="hidden md:block">
-      <Image src="/main.jpg" className='rounded-md w-full' preview={false}/>
+      <Image src="/main.jpg" className='rounded-md w-full' preview={false} alt='map'/>
     {/* <Carousel autoplay >
     <div>
       <Image src="/banner.jpg" className='rounded-md w-full' preview={false}/>

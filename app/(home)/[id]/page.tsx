@@ -1,4 +1,4 @@
-"use client"
+// "use client"
 import React from 'react';
 import {
 Flex
@@ -8,6 +8,11 @@ import Calc from '../ui/Calc';
 import Cards from '../ui/Cards';
 
 // Config: 
+
+export function generateStaticParams() {
+  return [{ id: 'rss' }, { id: 'vgr' }, { id: 'vgv' }, { id: 'vgd' }, { id: 'vgm' }, { id: 'vgd' }, { id: 'vgr' }, { id: 'rsa' }, { id: 'rsm' }, { id: 'vge' }, { id: 'vgs' }, { id: 'vgl' }]
+}
+
 
 
 export default function Item({ params }: { params: { id: string } }) {

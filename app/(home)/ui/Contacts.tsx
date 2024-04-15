@@ -17,7 +17,7 @@ export default function Contacts() {
 
         <div className='fixed bottom-10 right-10 w-content'>
           <a title={imgArray[img % 3][0]} href={imgArray[img % 3][1]} target="_blank">
-            <Image src={imgArray[img % 3][2]} className='w-20 h-20'/>
+            <Image src={imgArray[img % 3][2]} className='w-20 h-20' alt='phone'/>
           </a>
         </div>
 

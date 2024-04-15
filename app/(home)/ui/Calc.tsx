@@ -25,7 +25,7 @@ export default function Calc(props: CalcProps) {
     setsale(Math.round(costOfMetr[main.tarif] * main.range * saleValue[main.tarif] / 100));
     setCost(Math.round(costOfMetr[main.tarif] * main.range * (100 - saleValue[main.tarif]) / 100))
 
-  }, [JSON.stringify(main)])
+  }, [main.tarif, main.range]);
 
   return (
 
