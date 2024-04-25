@@ -53,7 +53,7 @@ export default function Calc(props: CalcProps) {
                             onChange={(value: any) =>
                           setMain({...main, range: cityArray[value]})
                         }>
-                            <Select.Option value={0}>Волгоград ↔️ Ростов</Select.Option>
+                            <Select.Option value={0}>Волгоград ↔️ Ростов-на-Дону</Select.Option>
                             <Select.Option value={1}>Волгоград ↔️ Волгодонск</Select.Option>
                             <Select.Option value={2}>Волгоград ↔️ Сочи</Select.Option>
                             <Select.Option value={3}>Волгоград ↔️ Донецк</Select.Option>
