@@ -47,25 +47,25 @@ export default function HomeLayout({
 <Row gutter={[12, 12]}>
     <Col  span={24} md={6} >
     <ul>
-        <li><a href="/rss.html">Самара</a></li>
-        <li><a href="/vgr.html">Волгоград</a></li>
-        <li><a href="/vgv.html">Волгодонск</a></li>
+        <li><a href="/rss/">Самара</a></li>
+        <li><a href="/vgr/">Волгоград</a></li>
+        <li><a href="/vgv/">Волгодонск</a></li>
         <li>Санкт_Петербург</li>
     </ul>
     </Col>
     <Col  span={24} md={6} >
     <ul>
-        <li><a href="/vgm.html">Москва</a></li>
-        <li><a href="/vgd.html">Донецк (ДНР)</a></li>
-        <li><a href="/rsm.html">Миниральные Воды</a></li>
+        <li><a href="/vgm/">Москва</a></li>
+        <li><a href="/vgd/">Донецк (ДНР)</a></li>
+        <li><a href="/rsm/">Миниральные Воды</a></li>
         <li>Новосибирск</li>
     </ul>
 
     </Col>
     <Col  span={24} md={6} >
     <ul>
-        <li><a href="/vgr.html">Ростов-на-Дону</a></li>
-        <li><a href="/rsa.html">Астрахань</a></li>
+        <li><a href="/vgr/">Ростов-на-Дону</a></li>
+        <li><a href="/rsa/">Астрахань</a></li>
         <li>Хабаровск</li>
         <li>Краснодар</li>
         {/* <li>Элиста</li> */}
@@ -74,8 +74,8 @@ export default function HomeLayout({
     </Col>
     <Col  span={24} md={6} >
     <ul>
-        <li><a href="/vge.html">Элиста</a></li>
-        <li><a href="/vgs.html">Сочи</a></li>
+        <li><a href="/vge/">Элиста</a></li>
+        <li><a href="/vgs/">Сочи</a></li>
         <li>Красноярск</li>
         <li>Крым</li>
 

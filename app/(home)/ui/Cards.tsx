@@ -32,7 +32,7 @@ export default function Home() {
                         {/* <Link href={`/discounts/${item?.id}`}> */}
                             <Badge.Ribbon color="red" text={`Скидка 3%`}>
                                 <Card hoverable cover={<img alt="example" src="/img/octavia.jpg" />} >
-                                    <Meta title='Тариф: комфорт' description='Shkoda Actavia, Hundai Elantra и аналоги'/>
+                                    <Meta title='Тариф: комфорт' description='Skoda Octavia, Hyundai Elantra и аналоги'/>
                                     <ButtonElements/>
                                   
                                 </Card>
@@ -54,7 +54,7 @@ export default function Home() {
                         {/* <Link href={`/discounts/${item?.id}`}> */}
                             <Badge.Ribbon color="red" text={`Скидка 8%`}>
                                 <Card hoverable cover={<img alt="example" src="/img/alf.jpg" />} >
-                                    <Meta title='Тариф: минивен (компактвен) от 45р.' description='Toyota Alphard, Hundai H1 и аналоги' />
+                                    <Meta title='Тариф: минивэн (компактвен) от 45р.' description='Toyota Alphard, Hyundai H1 и аналоги' />
                                     <ButtonElements/>
                                 </Card>
                             </Badge.Ribbon>
@@ -73,18 +73,18 @@ function ButtonElements() {
     <div className='w-full text-center mt-3'>
     <ButtonGroup variant="contained" aria-label="Basic button group" className=' mx-auto'>
       <Button > 
-        <a title={"Telegramm"} href={"https://t.me/+79020970101"} target="_blank">
+        <a title={"Telegramm"} href={"https://t.me/+79020970101"} target="_blank"  onClick={()=> `ym(97029123, 'reachGoal', 'click-phone')`}>
                 <Image src={"/img/telegramm.png"} width='44' height='44' alt='phone' />
         </a>
         </Button>
       <Button>
-         <a title={"Whatsapp"} href={"https://wa.me/+79020970101"} target="_blank">
+         <a title={"Whatsapp"} href={"https://wa.me/+79020970101"} target="_blank"  onClick={()=> `ym(97029123, 'reachGoal', 'click-phone')`}>
                 <Image src={"/img/whatsapp.png"} width='48' height='48' alt='phone' />
         </a>
      
       </Button>
       <Button>
-        <a title={"phone"} href={"tel:+79020970101"} target="_blank">
+        <a title={"phone"} href={"tel:+79020970101"} target="_blank"  onClick={()=> `ym(97029123, 'reachGoal', 'click-phone')`}>
                 <Image src={"/img/phone.png"} width='44' height='44' alt='phone' />
         </a>
       </Button>
