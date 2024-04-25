@@ -5,7 +5,7 @@ import Container from '@mui/material/Container';
 import Contacts from "./ui/Contacts"
 import { Breadcrumb, Layout, Menu, theme,   Row, Col, List } from 'antd';
 const { Header, Content, Footer } = Layout;
-
+// import { YMInitializer } from 'react-yandex-metrika';
 
 
 export default function HomeLayout({
@@ -92,6 +92,7 @@ export default function HomeLayout({
       </div>
     </Layout>
       <Contacts />
+      {/* <YMInitializer accounts={[97029123]} /> */}
           </>
 
 

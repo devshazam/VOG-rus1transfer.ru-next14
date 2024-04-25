@@ -25,6 +25,19 @@ export default function YandexMetric() {
                    });
                 `}
             </Script>
+            <Script
+                type="text/javascript"
+                id="goal-script" >
+                {`
+                   const rulesBtn = document.querySelectorAll(".phone-ya");
+                   
+                    for (let i = 0; i < rulesBtn.length; i++) {
+                        rulesBtn[i].addEventListener("click", function() {
+                            ym(97029123, 'reachGoal', 'click-phone'); return true;
+                        });
+                    }
+                `}
+            </Script>
             <noscript>
                 <div>
                 <img src="https://mc.yandex.ru/watch/97029123" style={{position: 'absolute', left:'-9999px'}} alt="" />

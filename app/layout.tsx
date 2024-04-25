@@ -4,6 +4,7 @@ import "./globals.css";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import { AntdRegistry } from '@ant-design/nextjs-registry';
 import YandexMetric from "./(home)/ui/YandexMetric";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={inter.className}>
       <AntdRegistry>{children}</AntdRegistry>
       <YandexMetric />
+
       </body>
     </html>
   );
