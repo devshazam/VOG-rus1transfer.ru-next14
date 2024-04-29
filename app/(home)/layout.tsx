@@ -42,15 +42,15 @@ export default function HomeLayout({
         </div>
       </Content>
       <Footer style={{ textAlign: 'center' }}>
-      <div className='p-4'>
+      {/* <div className='p-4'></div>  */}
 
 <Row gutter={[12, 12]}>
     <Col  span={24} md={6} >
     <ul>
-        <li><a href="/rss/">Самара</a></li>
-        <li><a href="/vgr/">Волгоград</a></li>
-        <li><a href="/vgv/">Волгодонск</a></li>
-        <li>Санкт_Петербург</li>
+        <li><b>Контакты:</b></li>
+        <li><a title={"phone"} href={"tel:+79297837333"} >+79297837333</a></li>
+        <li><a title={"phone"} href={"tel:+79020970101"} >+79020970101</a></li>
+        {/* <li>Работаем по всей России (ДНР + ЛНР)</li> */}
     </ul>
     </Col>
     <Col  span={24} md={6} >
@@ -58,7 +58,8 @@ export default function HomeLayout({
         <li><a href="/vgm/">Москва</a></li>
         <li><a href="/vgd/">Донецк (ДНР)</a></li>
         <li><a href="/rsm/">Миниральные Воды</a></li>
-        <li>Новосибирск</li>
+        {/* <li>Новосибирск</li> */}
+        <li><a href="/rss/">Самара</a></li>
     </ul>
 
     </Col>
@@ -66,9 +67,9 @@ export default function HomeLayout({
     <ul>
         <li><a href="/vgr/">Ростов-на-Дону</a></li>
         <li><a href="/rsa/">Астрахань</a></li>
+        <li><a href="/vgr/">Волгоград</a></li>
         <li>Хабаровск</li>
-        <li>Краснодар</li>
-        {/* <li>Элиста</li> */}
+        {/* <li>Краснодар</li> */}
     </ul>
 
     </Col>
@@ -76,14 +77,14 @@ export default function HomeLayout({
     <ul>
         <li><a href="/vge/">Элиста</a></li>
         <li><a href="/vgs/">Сочи</a></li>
-        <li>Красноярск</li>
+        <li><a href="/vgv/">Волгодонск</a></li>
         <li>Крым</li>
 
     </ul>
 
     </Col>
 </Row>
-</div>
+
 <p>Работаем с корпоративными клиентами</p>
         <div>
         Разработано в <a href="https://kopi34.ru/">kopi34.ru</a> ©2024
