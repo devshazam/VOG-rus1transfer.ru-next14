@@ -2,7 +2,7 @@
 import React , {useEffect, useState} from 'react';
 import {
   Select,
-  Slider, Flex,} from 'antd';
+  Slider, Flex,  Col, InputNumber, Row,} from 'antd';
 
 
 // Config:
@@ -69,17 +69,32 @@ export default function Calc(props: CalcProps) {
 
 
                     {/* Срок */}
-                        <Slider max={5000} min={0} 
-                            marks={{
-                            0: 'Километраж',
-                            2500: '2500 км.',
-                            5000: '5000 км.',
-                            }} 
-                            value={main.range}
-                            onChange={(value: any) =>
-                              setMain({...main, range: value})
-                            }
-                        />
+                        
+                           <Row>
+                              <Col span={20}>
+                              <Slider max={5000} min={0} 
+                                  marks={{
+                                  0: 'Километраж',
+                                  5000: '5000км',
+                                  }} 
+                                  value={main.range}
+                                  onChange={(value: any) =>
+                                    setMain({...main, range: value})
+                                  }
+                              />
+                              </Col>
+                              <Col span={4}>
+                                <InputNumber
+                                  min={0}
+                                  max={5000}
+                                  style={{ margin: '0 16px' }}
+                                  value={main.range}
+                                  onChange={(value: any) =>
+                                    setMain({...main, range: value})
+                                  }
+                                />
+                              </Col>
+                            </Row>
                       <div className='flex justify-center '>
                             <div className='w-1/2 box-border text-left' >
                                 <h2 className='text-xl'>Цена: {cost}руб.</h2>
@@ -97,3 +112,6 @@ export default function Calc(props: CalcProps) {
         </>
   );
 }
+
+
+

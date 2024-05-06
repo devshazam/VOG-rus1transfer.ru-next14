@@ -1,12 +1,20 @@
 "use client"
 import ResponsiveAppBar from "./ui/ResponsiveAppBar"
 import Container from '@mui/material/Container';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 import Contacts from "./ui/Contacts"
 import { Breadcrumb, Layout, Menu, theme,   Row, Col, List } from 'antd';
 const { Header, Content, Footer } = Layout;
 // import { YMInitializer } from 'react-yandex-metrika';
-
+const themes = createTheme({
+  palette: {
+    primary: {
+      main: "#78797d",
+      // main: red[500],
+    },
+  },
+});
 
 export default function HomeLayout({
   children,
@@ -20,6 +28,7 @@ export default function HomeLayout({
 
   return (
 <>
+<ThemeProvider theme={themes}>
          <Layout>
           <div className="lg:w-4/5 lg:m-auto">
       <Header style={{ display: 'flex', alignItems: 'center', height: 'auto' }}>
@@ -94,6 +103,7 @@ export default function HomeLayout({
     </Layout>
       <Contacts />
       {/* <YMInitializer accounts={[97029123]} /> */}
+      </ThemeProvider>
           </>
 
 
