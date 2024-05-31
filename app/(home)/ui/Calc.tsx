@@ -7,7 +7,7 @@ import {
 
 // Config:
 const cityArray:any = [480, 260, 1000, 720, 1000, 300, 1300, 1254, 620, 480, 0];
-const costOfMetr: any = [25, 30, 35, 42];
+const costOfMetr: any = [23, 28, 35, 42];
 const saleValue: any = [0, 3, 3, 6];
 const mapArray: any = ['vgr', 'vgv', 'vgs', 'vgd', 'vgm', 'vge', 'rss', 'rse', 'rsa', 'rsm']
 
@@ -42,10 +42,10 @@ export default function Calc(props: CalcProps) {
                         onChange={(value: any) =>
                            setMain({...main, tarif: value})
                         }>
-                            <Select.Option value={0}>Эконом (25 руб./км.)</Select.Option>
-                            <Select.Option value={1}>Комфорт (30 руб./км. + 3% скидка)</Select.Option>
-                            <Select.Option value={2}>Комфорт (35 руб./км. + 3% скидка)</Select.Option>
-                            <Select.Option value={3}>Минивен (42 руб./км. + 6% скидка)</Select.Option>
+                            <Select.Option value={0}>{`Эконом (${costOfMetr[0]} руб./км.)`}</Select.Option>
+                            <Select.Option value={1}>{`Комфорт (${costOfMetr[1]} руб./км. + 3% скидка)`}</Select.Option>
+                            <Select.Option value={2}>{`Комфорт (${costOfMetr[2]} руб./км. + 3% скидка)`}</Select.Option>
+                            <Select.Option value={3}>{`Минивен (${costOfMetr[3]} руб./км. + 6% скидка)`}</Select.Option>
                         </Select>
 
 
