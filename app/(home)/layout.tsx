@@ -34,7 +34,7 @@ export default function HomeLayout({
       <Header style={{ display: 'flex', alignItems: 'center', height: 'auto' }}>
       <ResponsiveAppBar />
       </Header>
-      <Content style={{ padding: '0 48px' }}>
+      <Content>
         <Breadcrumb style={{ margin: '16px 0' }}>
           <Breadcrumb.Item>Home</Breadcrumb.Item>
         </Breadcrumb>
