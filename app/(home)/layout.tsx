@@ -57,7 +57,7 @@ export default function HomeLayout({
     <Col  span={24} md={6} >
     <ul>
         <li><b>Контакты:</b></li>
-        <li><a title={"phone"} href={"tel:+79297837333"} >+79297837333</a></li>
+        <li><a title={"phone"} href={"tel:+79020970101"} >+79020970101</a></li>
         <li><a title={"phone"} href={"tel:+79020970101"} >+79020970101</a></li>
         {/* <li>Работаем по всей России (ДНР + ЛНР)</li> */}
     </ul>

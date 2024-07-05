@@ -3,7 +3,7 @@ import { useEffect , useState} from 'react';
 import {Carousel, Image} from 'react-bootstrap';
 import ym from 'react-yandex-metrika';
 
-const imgArray = [["phone", "tel:+79297837333 ", '/img/phone.png'], ["Telegramm", "https://t.me/+79297837333 ", '/img/telegramm.png'], ["Whatsapp", "https://wa.me/+79297837333 ", '/img/whatsapp.png']]
+const imgArray = [["phone", "tel:+79020970101 ", '/img/phone.png'], ["Telegramm", "https://t.me/+79020970101 ", '/img/telegramm.png'], ["Whatsapp", "https://wa.me/+79020970101 ", '/img/whatsapp.png']]
 
 
 export default function Contacts() {
