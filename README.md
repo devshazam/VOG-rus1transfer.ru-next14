@@ -1,2 +1,1 @@
-https://rus1transfer.ru/
-rustammitaeff@yandex.ru
+# rus1transfer.ru
