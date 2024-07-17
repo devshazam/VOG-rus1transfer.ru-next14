@@ -15,7 +15,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import {} from '@mui/material';
-import { Modal } from 'antd';
+
 
 
 const pages = ['calc', 'tarif', 'map'];
@@ -23,7 +23,7 @@ const pagesToRussian:any = {calc: "Калькулятор", tarif: "Тарифы
 
 
 export default function ResponsiveAppBar() {
-  const [isModalOpen, setIsModalOpen] =  React.useState<any>(false);
+
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
@@ -35,29 +35,16 @@ export default function ResponsiveAppBar() {
     setAnchorElNav(null);
   };
 
-  const showModal = () => {
-    setIsModalOpen(true);
-  };
 
-  const handleOk = () => {
-    setIsModalOpen(false);
-  };
-
-  const handleCancel = () => {
-    setIsModalOpen(false);
-  };
 
   return (     
     <>
-    <Modal title="Акция месяца!" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-      <p>Скидка 10% на обратный путь! Скидка действует на путь в обратном направлении без ограничения срока давности!</p>
-
-    </Modal>
+ 
     <AppBar position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
-          <Avatar  variant="square" alt="лого" src="/icons8-taxi-64.png"  sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}  />
+          <Avatar  variant="square" alt="лого" src="/icons8-taxi-96.png"  sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}  />
           <Typography
             variant="h6"
             noWrap
@@ -73,7 +60,7 @@ export default function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            RusTransfer
+            <span style={{color: "#ffd913"}}>Rus</span>Transfer
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -113,7 +100,7 @@ export default function ResponsiveAppBar() {
             </Menu>
           </Box>
           {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />*/}
-          <Avatar  variant="square" alt="лого" src="/icons8-taxi-64.png"  sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }}  /> 
+          <Avatar  variant="square" alt="лого" src="/icons8-taxi-96.png"  sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }}  /> 
           <Typography
             variant="h5"
             noWrap
@@ -124,13 +111,14 @@ export default function ResponsiveAppBar() {
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
               fontFamily: 'monospace',
-              fontWeight: 700,
+              fontWeight: 500,
               letterSpacing: '.1rem',
               color: 'inherit',
               textDecoration: 'none',
+              fontSize: "20px"
             }}
           >
-            RusTransfer
+            +7<span style={{color: "#ffd913"}}>(902)</span>097-01-01
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
@@ -144,8 +132,12 @@ export default function ResponsiveAppBar() {
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
-                <Avatar alt="Remy Sharp" src="/icons8-sale.gif"  sx={{ p: 0 }}  onClick={showModal}/>
+          <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' }, fontSize: "18px", marginRight: "10px" }}>
+          +7<span style={{color: "#ffd913"}}> (902) </span>097-01-01
+             
+          </Box>
+          <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' }, fontSize: "18px" }}>
+              <Avatar src={"/icons8-24-hours-64.png"}  style={{display: 'inline-block', width: "40px", height: "40px"}} />
              
           </Box>
         </Toolbar>

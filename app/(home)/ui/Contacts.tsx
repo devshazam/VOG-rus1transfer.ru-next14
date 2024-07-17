@@ -16,7 +16,7 @@ export default function Contacts() {
 
   return (
 
-        <div className='fixed bottom-10 right-10 w-content'>
+        <div className='fixed bottom-10 right-10 w-content' >
           <a title={imgArray[img % 3][0]} href={imgArray[img % 3][1]} target="_blank" className='phone-ya'
           // onClick={()=>{
           //   ym('reachGoal','click-phone')

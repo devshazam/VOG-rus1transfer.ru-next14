@@ -2,8 +2,8 @@
 import React , {useEffect, useState} from 'react';
 import {
   Select,
-  Slider, Flex,  Col, InputNumber, Row,} from 'antd';
-
+  Slider, Flex,  Col, InputNumber, Row,  DatePicker} from 'antd';
+  import Button from '@mui/material/Button';
 
 // Config:
 const cityArray:any = [480, 260, 1000, 720, 1000, 300, 1300, 1254, 620, 480, 0];
@@ -31,13 +31,16 @@ export default function Calc(props: CalcProps) {
 
         <>
         <div id="calc" className='mb-6 rounded' style={{backgroundColor: "#f5f5f5"}} >
-                <div className='mt-2 ml-2'><h2 className='text-2xl '>Калькулятор:</h2></div>
+                {/* <div className='mt-2 ml-2'><h2 className='text-2xl '>Расчет стоимости:</h2></div> */}
 
 
             <div className="flex justify-center " >
 
                   <div className="w-4/5 my-4 ">
                   <Flex vertical gap={24} className="mt-8">
+                        <DatePicker placeholder="Выберите дату поездки"
+                        // onChange={onChange} 
+                        />
                         <Select  placeholder="Тариф:" value={main.tarif} 
                         onChange={(value: any) =>
                            setMain({...main, tarif: value})
@@ -103,6 +106,8 @@ export default function Calc(props: CalcProps) {
                                 <h2 className='text-xl'>Скидка: {sale}руб.</h2>
                             </div>
                       </div>
+                      <Button fullWidth  variant="contained" style={{backgroundColor: '#ffd913', color: '#000'}}>Забронировать
+                      </Button>
                   </Flex>
                   </div>
             </div>

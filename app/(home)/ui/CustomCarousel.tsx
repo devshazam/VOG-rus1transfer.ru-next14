@@ -11,16 +11,25 @@ const contentStyle: React.CSSProperties = {
 export default function CustomCarousel() {
 
   return (
-    <div  className="hidden md:block">
-      <Image src="/main.jpg" className='rounded-md w-full' preview={false} alt='map'/>
-    {/* <Carousel autoplay >
-    <div>
-      <Image src="/banner.jpg" className='rounded-md w-full' preview={false}/>
-    </div>
-    <div>
-      <Image src="/img/banner/taxi.jpg" />
-    </div>
-  </Carousel> */}
+    <>
+    <div  className=" mb-6 main-ban  hidden md:block">
+      
+      <div className='wrapp-text-banner'>
+        <h1 className='h1-banner'>Междугороднее <br></br><i>экспресс такси</i> </h1>
+        <p className='text-banner'>Мы осуществляем дальние пассажирские перевозки <br></br>(трансфер) в любые точки России<br></br> + новые территории!</p>
+
+      </div>
   </div>
+    <div  className=" mb-6 main-ban-mobile md:hidden">
+      <div className='back-wrap'></div>
+      <div className='wrapp-text-banner-mobile'>
+        <h1 className='h1-banner-mobile'>Междугороднее <br></br><i>экспресс такси</i> </h1>
+        <p className='text-banner-mobile'>Мы осуществляем дальние пассажирские перевозки (трансфер) в любые точки России + новые территории!</p>
+
+      </div>
+  </div>
+      {/* <img src="/RusTransfer_09-04-2024_15-04-00.jpeg" alt='map' className='rounded-xl hidden md:block'/>
+      <img src="/RusTransfer_09-04-2024_15-08-10.jpeg" alt='map' className='rounded-xl md:hidden'/> */}
+      </>
   );
 };

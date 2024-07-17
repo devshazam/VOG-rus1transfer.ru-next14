@@ -10,7 +10,7 @@ const { Header, Content, Footer } = Layout;
 const themes = createTheme({
   palette: {
     primary: {
-      main: "#78797d",
+      main: "#000000",
       // main: red[500],
     },
   },
@@ -35,15 +35,16 @@ export default function HomeLayout({
       <ResponsiveAppBar />
       </Header>
       <Content>
-        <Breadcrumb style={{ margin: '16px 0' }}>
+        {/* <Breadcrumb style={{ margin: '16px 0' }}>
           <Breadcrumb.Item>Home</Breadcrumb.Item>
-        </Breadcrumb>
+        </Breadcrumb> */}
         <div
           style={{
             background: colorBgContainer,
             minHeight: 280,
             padding: 24,
             borderRadius: borderRadiusLG,
+            marginTop: 50
           }}
         >
             
@@ -53,13 +54,13 @@ export default function HomeLayout({
       <Footer style={{ textAlign: 'center' }}>
       {/* <div className='p-4'></div>  */}
 
-<Row gutter={[12, 12]}>
+{/* <Row gutter={[12, 12]}>
     <Col  span={24} md={6} >
     <ul>
         <li><b>Контакты:</b></li>
         <li><a title={"phone"} href={"tel:+79020970101"} >+79020970101</a></li>
         <li><a title={"phone"} href={"tel:+79020970101"} >+79020970101</a></li>
-        {/* <li>Работаем по всей России (ДНР + ЛНР)</li> */}
+
     </ul>
     </Col>
     <Col  span={24} md={6} >
@@ -67,7 +68,6 @@ export default function HomeLayout({
         <li><a href="/vgm/">Москва</a></li>
         <li><a href="/vgd/">Донецк (ДНР)</a></li>
         <li><a href="/rsm/">Миниральные Воды</a></li>
-        {/* <li>Новосибирск</li> */}
         <li><a href="/rss/">Самара</a></li>
     </ul>
 
@@ -78,7 +78,7 @@ export default function HomeLayout({
         <li><a href="/rsa/">Астрахань</a></li>
         <li><a href="/vgr/">Волгоград</a></li>
         <li>Хабаровск</li>
-        {/* <li>Краснодар</li> */}
+
     </ul>
 
     </Col>
@@ -92,11 +92,9 @@ export default function HomeLayout({
     </ul>
 
     </Col>
-</Row>
-
-<p>Работаем с корпоративными клиентами</p>
+</Row> */}
         <div>
-        Разработано в <a href="https://kopi34.ru/">kopi34.ru</a> ©2024
+            <a href="#"><p>Работаем с корпоративными клиентами</p></a>
         </div>
       </Footer>
       </div>
