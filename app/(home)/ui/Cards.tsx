@@ -36,7 +36,7 @@ export default function Home() {
                         {/* <Link href={`/discounts/${item?.id}`}> */}
                             {/* <Badge.Ribbon color="red" text={`Скидка 5%`}> */}
                                 <Card hoverable cover={<img alt="example" src="/img/sol.jpg" />} >
-                                    <Meta title='Тариф: эконом' description='Kia Rio, VW Polo, Solaris, Rapid и аналоги' />
+                                    <Meta title='Тариф эконом: 25 руб./км.' description='Kia Rio, VW Polo, Solaris, Rapid и аналоги' />
                                     <div className='w-full text-center mt-3'>
                                         <Button fullWidth  variant="contained" style={{backgroundColor: '#ffd913', color: '#000'}} onClick={showModal}> Вызвать такси
                                         </Button>
@@ -49,7 +49,7 @@ export default function Home() {
                         {/* <Link href={`/discounts/${item?.id}`}> */}
                             <Badge.Ribbon color="red" text={`Скидка 3%`}>
                                 <Card hoverable cover={<img alt="example" src="/img/octavia.jpg" />} >
-                                    <Meta title='Тариф: комфорт' description='Skoda Octavia, Hyundai Elantra и аналоги'/>
+                                    <Meta title='Тариф комфорт: 28 руб./км.' description='Skoda Octavia, Hyundai Elantra и аналоги'/>
                                     <div className='w-full text-center mt-3'>
                                         <Button fullWidth  variant="contained" style={{backgroundColor: '#ffd913', color: '#000'}} onClick={showModal}> Вызвать такси
                                         </Button>
@@ -63,7 +63,7 @@ export default function Home() {
                         {/* <Link href={`/discounts/${item?.id}`}> */}
                             <Badge.Ribbon color="red" text={`Скидка 8%`}>
                                 <Card hoverable cover={<img alt="example" src="/img/camry.jpg" />} >
-                                    <Meta title='Тариф: комфорт плюс' description='Toyota Camry и другие премиальные авто.' />
+                                    <Meta title='Тариф комфорт плюс: 35 руб./км.' description='Toyota Camry и другие премиальные авто.' />
                                     <div className='w-full text-center mt-3'>
                                         <Button fullWidth  variant="contained" style={{backgroundColor: '#ffd913', color: '#000'}} onClick={showModal}> Вызвать такси
                                         </Button>
@@ -77,7 +77,7 @@ export default function Home() {
                         {/* <Link href={`/discounts/${item?.id}`}> */}
                             <Badge.Ribbon color="red" text={`Скидка 8%`}>
                                 <Card hoverable cover={<img alt="example" src="/img/alf.jpg" />} >
-                                    <Meta title='Тариф: минивэн (компактвен) от 45р.' description='Toyota Alphard, Hyundai H1 и аналоги' />
+                                    <Meta title='Тариф минивэн (компактвен): от 42 руб./км.р.' description='Toyota Alphard, Hyundai H1 и аналоги' />
                                     <div className='w-full text-center mt-3'>
                                         <Button fullWidth  variant="contained" style={{backgroundColor: '#ffd913', color: '#000'}} onClick={showModal}> Вызвать такси
                                         </Button>

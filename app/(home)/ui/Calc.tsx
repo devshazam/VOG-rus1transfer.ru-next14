@@ -2,12 +2,12 @@
 import React , {useEffect, useState} from 'react';
 import {
   Select,
-  Slider, Flex,  Col, InputNumber, Row,  DatePicker} from 'antd';
+  Slider, Flex,  Col, InputNumber, Row,  DatePicker, Input} from 'antd';
   import Button from '@mui/material/Button';
 
 // Config:
 const cityArray:any = [480, 260, 1000, 720, 1000, 300, 1300, 1254, 620, 480, 0];
-const costOfMetr: any = [23, 28, 35, 42];
+const costOfMetr: any = [25, 28, 35, 42];
 const saleValue: any = [0, 3, 3, 6];
 const mapArray: any = ['vgr', 'vgv', 'vgs', 'vgd', 'vgm', 'vge', 'rss', 'rse', 'rsa', 'rsm']
 
@@ -37,15 +37,21 @@ export default function Calc(props: CalcProps) {
             <div className="flex justify-center " >
 
                   <div className="w-4/5 my-4 ">
+                  <form
+                    action="https://formspree.io/f/xanwnzje"
+                    method="POST"
+                  >
                   <Flex vertical gap={24} className="mt-8">
-                        <DatePicker placeholder="Выберите дату поездки"
+                        <DatePicker placeholder="Выберите дату поездки" name="date"
                         // onChange={onChange} 
                         />
+                        <Input placeholder="Email" name='email' required/>
                         <Select  placeholder="Тариф:" value={main.tarif} 
+                  
                         onChange={(value: any) =>
                            setMain({...main, tarif: value})
                         }>
-                            <Select.Option value={0}>{`Эконом (${costOfMetr[0]} руб./км.)`}</Select.Option>
+                            <Select.Option value={0}>{`Стандарт (${costOfMetr[0]} руб./км.)`}</Select.Option>
                             <Select.Option value={1}>{`Комфорт (${costOfMetr[1]} руб./км. + 3% скидка)`}</Select.Option>
                             <Select.Option value={2}>{`Комфорт (${costOfMetr[2]} руб./км. + 3% скидка)`}</Select.Option>
                             <Select.Option value={3}>{`Минивен (${costOfMetr[3]} руб./км. + 6% скидка)`}</Select.Option>
@@ -106,9 +112,12 @@ export default function Calc(props: CalcProps) {
                                 <h2 className='text-xl'>Скидка: {sale}руб.</h2>
                             </div>
                       </div>
-                      <Button fullWidth  variant="contained" style={{backgroundColor: '#ffd913', color: '#000'}}>Забронировать
+                      <input type="hidden" name="tarif" value={main.tarif} />
+                      <input type="hidden" name="range" value={main.range} />
+                      <Button fullWidth  variant="contained" style={{backgroundColor: '#ffd913', color: '#000'}} type='submit'>Забронировать
                       </Button>
                   </Flex>
+                      </form>
                   </div>
             </div>
             </div>
