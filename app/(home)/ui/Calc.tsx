@@ -45,7 +45,7 @@ export default function Calc(props: CalcProps) {
                         <DatePicker placeholder="Выберите дату поездки" name="date"
                         // onChange={onChange} 
                         />
-                        <Input placeholder="Email" name='email' required/>
+                        <Input placeholder="Телефон" name='phone' required/>
                         <Select  placeholder="Тариф:" value={main.tarif} 
                   
                         onChange={(value: any) =>
