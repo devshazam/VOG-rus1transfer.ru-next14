@@ -94,7 +94,7 @@ export default function HomeLayout({
     </Col>
 </Row> */}
         <div>
-            <a href="#"><p>Работаем с корпоративными клиентами</p></a>
+           <p>Также мы работаем с корпоративными клиентами</p>
         </div>
       </Footer>
       </div>

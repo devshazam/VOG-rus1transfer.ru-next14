@@ -6,7 +6,7 @@ import {
   import Button from '@mui/material/Button';
 
 // Config:
-const cityArray:any = [480, 260, 1000, 720, 1000, 300, 1300, 1254, 620, 480, 0];
+const cityArray:any = [1077, 1208, 1521, 970, 1621, 657, 602, 765, 250, 916, 452, 656, 0];
 const costOfMetr: any = [25, 28, 35, 42];
 const saleValue: any = [0, 3, 3, 6];
 const mapArray: any = ['vgr', 'vgv', 'vgs', 'vgd', 'vgm', 'vge', 'rss', 'rse', 'rsa', 'rsm']
@@ -62,17 +62,19 @@ export default function Calc(props: CalcProps) {
                             onChange={(value: any) =>
                           setMain({...main, range: cityArray[value]})
                         }>
-                            <Select.Option value={0}>Волгоград ↔️ Ростов-на-Дону</Select.Option>
-                            <Select.Option value={1}>Волгоград ↔️ Волгодонск</Select.Option>
-                            <Select.Option value={2}>Волгоград ↔️ Сочи</Select.Option>
-                            <Select.Option value={3}>Волгоград ↔️ Донецк</Select.Option>
-                            <Select.Option value={4}>Волгоград ↔️ Москва</Select.Option>
-                            <Select.Option value={5}>Волгоград ↔️ Элиста</Select.Option>
-                            <Select.Option value={6}>Ростов ↔️ Самара</Select.Option>
-                            <Select.Option value={7}>Ростов ↔️ Элиста</Select.Option>
-                            <Select.Option value={8}>Ростов ↔️ Астрахань</Select.Option>
-                            <Select.Option value={9}>Ростов ↔️ Мин. Воды</Select.Option>
-                            <Select.Option value={10}>Россия и новые территории (произвольный маршрут)</Select.Option>
+                            <Select.Option value={0}>Москва ↔️ Ростов-на-Дону</Select.Option>
+                            <Select.Option value={1}>Москва ↔️ Донецк</Select.Option>
+                            <Select.Option value={2}>Москва ↔️ Геленджик</Select.Option>
+                            <Select.Option value={3}>Москва ↔️ Волгоград</Select.Option>
+                            <Select.Option value={4}>Москва ↔️ Сочи</Select.Option>
+                            <Select.Option value={5}>Донецк ↔️ Геленджик</Select.Option>
+                            <Select.Option value={6}>Донецк ↔️ Волгоград</Select.Option>
+                            <Select.Option value={7}>Донецк ↔️ Сочи</Select.Option>
+                            <Select.Option value={8}>Геленджик ↔️ Сочи</Select.Option>
+                            <Select.Option value={9}>Геленджик ↔️ Волгоград</Select.Option>
+                            <Select.Option value={10}>Геленджик ↔️ Ростов-на-Дону</Select.Option>
+                            <Select.Option value={11}>Геленджик ↔️ Донецк</Select.Option>
+                            <Select.Option value={12}>Россия и новые территории (произвольный маршрут)</Select.Option>
                         </Select>
                         
 
