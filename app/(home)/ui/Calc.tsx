@@ -4,11 +4,9 @@ import {
   Select,
   Slider, Flex,  Col, InputNumber, Row,  DatePicker, Input} from 'antd';
   import Button from '@mui/material/Button';
-
+import {costOfMetr, saleValue} from '@/config/prices';
 // Config:
 const cityArray:any = [1077, 1208, 1521, 970, 1621, 657, 602, 765, 250, 916, 452, 656, 0];
-const costOfMetr: any = [25, 28, 35, 42];
-const saleValue: any = [0, 3, 3, 6];
 const mapArray: any = ['vgr', 'vgv', 'vgs', 'vgd', 'vgm', 'vge', 'rss', 'rse', 'rsa', 'rsm']
 
 type CalcProps = {
@@ -106,17 +104,17 @@ export default function Calc(props: CalcProps) {
                                 />
                               </Col>
                             </Row>
-                      <div className='flex justify-center '>
+                      {/* <div className='flex justify-center '>
                             <div className='w-1/2 box-border text-left' >
                                 <h2 className='text-xl'>Цена: {cost}руб.</h2>
                             </div>
                             <div className='w-1/2 box-border text-left'>
                                 <h2 className='text-xl'>Скидка: {sale}руб.</h2>
                             </div>
-                      </div>
+                      </div> */}
                       <input type="hidden" name="tarif" value={main.tarif} />
                       <input type="hidden" name="range" value={main.range} />
-                      <Button fullWidth  variant="contained" style={{backgroundColor: '#ffd913', color: '#000'}} type='submit'>Забронировать
+                      <Button fullWidth  variant="contained" style={{backgroundColor: '#ffd913', color: '#000'}} type='submit'>Цена: {cost}руб
                       </Button>
                   </Flex>
                       </form>
