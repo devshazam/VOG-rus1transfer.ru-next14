@@ -1,7 +1,7 @@
 "use client"
 import { useEffect , useState} from 'react';
 import {Carousel, Image} from 'react-bootstrap';
-import ym from 'react-yandex-metrika';
+// import ym from 'react-yandex-metrika';
 
 const imgArray = [["phone", "tel:+79020970101 ", '/img/phone.png'], ["Telegramm", "https://t.me/+79020970101 ", '/img/telegramm.png'], ["Whatsapp", "https://wa.me/+79020970101 ", '/img/whatsapp.png']]
 
@@ -18,9 +18,9 @@ export default function Contacts() {
 
         <div className='fixed bottom-10 right-10 w-content' >
           <a title={imgArray[img % 3][0]} href={imgArray[img % 3][1]} target="_blank" className='phone-ya'
-          onClick={()=>{
-            ym('reachGoal','click-phone')
-          }}
+          // onClick={()=>{
+          //   ym('reachGoal','click-phone')
+          // }}
           >
             <Image src={imgArray[img % 3][2]} className='w-20 h-20' alt='phone'/>
           </a>

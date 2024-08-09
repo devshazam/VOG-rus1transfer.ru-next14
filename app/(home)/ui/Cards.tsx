@@ -93,23 +93,18 @@ export default function Home() {
             <Modal title="Вызвать такси" open={isModalOpen} footer={null} onOk={handleOk} onCancel={handleCancel}>
                     <div className='w-full text-center mt-3 mb-3'>
                         <h2 style={{ color: '#ff0000', fontSize: "24px"}}>Звоните 24/7</h2>
-                        <a title={"phone"} href={"tel:+79020970101 "}  style={{ color: '#000', fontSize: "28px"}}  onClick={()=>{ym('reachGoal','click-phone')}}>
+                        <a title={"phone"} href={"tel:+79020970101 "}  style={{ color: '#000', fontSize: "28px"}} className='phone-ya'>
                                 +7 (902) 097-01-01
                         </a>
                         <p style={{ color: '#000', fontSize: "12px"}}>Мы всегда на связи! Мы готовы подъехать в любую точку области и забрать Вас, или доставить посылку. <b>Звоните, Все персонально и анонимно.</b></p>
                     </div>
                     <Button  fullWidth  variant="contained" style={{backgroundColor: '#ffd913', color: '#000'}} className='mb-3'> 
-                        <a title={"Telegramm"} href={"https://t.me/+79020970101 "} target="_blank" className='phone-ya'
-                         onClick={()=>{
-                            ym('reachGoal','click-phone')
-                          }}>
+                        <a title={"Telegramm"} href={"https://t.me/+79020970101 "} target="_blank" className='phone-ya'>
                                 <Image src={"/img/telegramm.png"} width='44' height='44' alt='phone' style={{display: 'inline-block'}} />{" "}Написать в Telegram
                         </a>
                         </Button>
                     <Button   fullWidth  variant="contained" style={{backgroundColor: '#ffd913', color: '#000'}}  className='mb-3'>
-                        <a title={"Whatsapp"} href={"https://wa.me/+79020970101 "} target="_blank" className='phone-ya'  onClick={()=>{
-            ym('reachGoal','click-phone')
-          }}>
+                        <a title={"Whatsapp"} href={"https://wa.me/+79020970101 "} target="_blank" className='phone-ya' >
                                 <Image src={"/img/whatsapp.png"} width='48' height='48' alt='phone' style={{display: 'inline-block'}} />{" "}Написать в Whatsapp
                         </a>
                     
