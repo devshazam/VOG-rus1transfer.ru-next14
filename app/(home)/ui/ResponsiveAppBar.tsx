@@ -15,7 +15,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import {} from '@mui/material';
-
+import ym from 'react-yandex-metrika';
 
 
 const pages = ['calc', 'tarif', 'map'];
@@ -116,6 +116,9 @@ export default function ResponsiveAppBar() {
               color: 'inherit',
               textDecoration: 'none',
               fontSize: "20px"
+            }}
+            onClick={()=>{
+              ym('reachGoal','click-phone')
             }}
           >
             +7<span style={{color: "#ffd913"}}>(902)</span>097-01-01

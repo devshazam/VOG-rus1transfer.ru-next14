@@ -100,7 +100,7 @@ export default function HomeLayout({
       </div>
     </Layout>
       <Contacts />
-      {/* <YMInitializer accounts={[97029123]} /> */}
+      {/* <YMInitializer accounts={[97790773]} /> */}
       </ThemeProvider>
           </>
 
