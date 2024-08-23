@@ -112,7 +112,6 @@ export default function ResponsiveAppBar() {
               flexGrow: 1,
               fontFamily: 'monospace',
               fontWeight: 500,
-              letterSpacing: '.1rem',
               color: 'inherit',
               textDecoration: 'none',
               fontSize: "20px"

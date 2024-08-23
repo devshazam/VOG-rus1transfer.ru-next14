@@ -23,8 +23,8 @@ export default function CustomCarousel() {
     <div  className=" mb-6 main-ban-mobile md:hidden">
       <div className='back-wrap'></div>
       <div className='wrapp-text-banner-mobile'>
-        <h1 className='h1-banner-mobile'>Междугороднее <br></br><i>экспресс такси</i> </h1>
-        <p className='text-banner-mobile'>Мы осуществляем дальние пассажирские перевозки (трансфер) в любые точки России + новые территории!</p>
+        <h1 className='h1-banner-mobile'>Междугороднее <br></br><span style={{color: "#ffd913"}}>такси</span> по всей<br></br>Ро<span style={{color: "#6e8af5"}}>сс</span><span style={{color: "#ff1313"}}>ии</span></h1>
+        <p className='text-banner-mobile'>+ новые территории!</p>
 
       </div>
   </div>

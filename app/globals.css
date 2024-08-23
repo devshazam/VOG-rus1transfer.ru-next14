@@ -60,12 +60,13 @@ body {
 
 .main-ban-mobile{
   background: url(/mobile.jpg) 100% / cover no-repeat;
-  height: 400px;
-  border-radius: 5px;
+  height: 350px;
+  border-radius: 25px;
   position: relative;
   
 }
 .back-wrap{
+  border-radius: 25px;
   position: absolute;
   left: 0;
   top: 0;
@@ -94,5 +95,12 @@ body {
   font-weight: 400;
   color: #fff;
   margin-top: 10px;
+
+}
+
+.card-imag-border{
+  border-top: 1px solid #e5e7eb;
+  border-left: 1px solid #e5e7eb;
+  border-right: 1px solid #e5e7eb;
 
 }
